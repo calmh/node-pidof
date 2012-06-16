@@ -3,7 +3,8 @@ pidof
 
 [![build status](https://secure.travis-ci.org/calmh/node-pidof.png)](http://travis-ci.org/calmh/node-pidof)
 
-Get the PID of a running process, or `null` if it couldn't be found.
+Get the PID of a running process, or `null` if it couldn't be found. Tested on
+Mac OS X, Solaris and Linux. Guaranteed not to work on Windows.
 
 Example
 -------
