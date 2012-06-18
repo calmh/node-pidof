@@ -21,4 +21,11 @@ describe('pidof', function () {
         should.exist(pid);
         pid.should.equal(3039);
     });
+    it('should find "node" running during tests', function (done) {
+        pidof('node', function (err, pid) {
+            should.not.exist(err);
+            should.exist(pid);
+            done();
+        });
+    });
 });
